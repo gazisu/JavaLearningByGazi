@@ -1,12 +1,5 @@
-
 /*
- * Assignment 3 user input
- * Create a class called product
- * Create a main method
- * declare validables: Id, Title, Price, Description, Category
- * get user input for each varriables,
- * Print the variables
- */
+
 
 import java.util.Scanner;
 public class AssignmentDataInput {
@@ -14,17 +7,17 @@ public class AssignmentDataInput {
         Scanner input = new Scanner(System.in);
 
         int ID, Price;
-
+        String Title, Description, Category;
         System.out.print("Enter ID: ");
         ID = input.nextInt();
         System.out.print("Enter Title: ");
-        String Title = input.next();
+        Title = input.next();
         System.out.print("Enter Price: ");
         Price = input.nextInt();
         System.out.print("Enter Description: ");
-        String Description = input.next();
+        Description = input.next();
         System.out.print("Enter Category: ");
-        String Category = input.next();
+        Category = input.next();
 
 
         System.out.println("ID: "+ID);
@@ -33,6 +26,37 @@ public class AssignmentDataInput {
         System.out.println("Description: "+Description);
         System.out.println("Category: "+Category);
 
+
+    }
+}
+*/
+import java.util.Scanner;
+
+public class AssignmentDataInput {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int ID, Price;
+        String Title, Description, Category;
+
+        System.out.print("Enter ID: ");
+        ID = input.nextInt();
+        System.out.print("Enter Title: ");
+        Title = input.nextLine(); // consume newline character left by input.nextInt()
+        Title = input.nextLine();
+        System.out.print("Enter Price: ");
+        Price = input.nextInt();
+        System.out.print("Enter Description: ");
+        Description = input.nextLine(); // consume newline character left by input.nextInt()
+        Description = input.nextLine();
+        System.out.print("Enter Category: ");
+        Category = input.nextLine();
+
+        System.out.println("ID: " + ID);
+        System.out.println("Title: " + Title);
+        System.out.println("Price: " + Price);
+        System.out.println("Product Description: "+Description);
+        System.out.println("Product Category: "+Category);
 
     }
 }
