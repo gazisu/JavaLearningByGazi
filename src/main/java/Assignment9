@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Assignment9 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int option;
+        System.out.println("Enter Language Option: ");
+        option=input.nextInt();
+        switch(option){
+        case 1:
+            System.out.print("Bangla");
+            break;
+        case 2:
+            System.out.print("Hindi");
+            break;
+        case 3:
+            System.out.print("Urdu");
+            break;
+        default:
+            System.out.print("English");
+        }
+    }
+}
