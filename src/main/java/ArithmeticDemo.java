@@ -25,6 +25,7 @@ public class ArithmeticDemo {
         System.out.println("Divided Value="+result);
         result = number2 % number1;
         System.out.println("Remainder Value="+result);
+        //test
     }
 
 }
