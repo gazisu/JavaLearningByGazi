@@ -6,7 +6,7 @@ import java.text.ParsePosition;
 import java.util.Date;
 
 public class Employee {
-    String Name, Phone_Number, Address;
+    String Name, PhoneNumber, Address;
     int ID;
     String DOB;
     String DOJ;
