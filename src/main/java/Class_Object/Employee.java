@@ -6,13 +6,20 @@ public class Employee {
     String DOB;
     String DOJ;
 
-    void setEmployeeinformation(int a, String b, String c, String d, String e, String f){
-        ID= a;
-        Name=b;
-        Address=c;
-        DOB=d;
-        DOJ=e;
-        PhoneNumber=f;
+    public Employee(int ID, String name, String address,  String DOB, String DOJ, String PhoneNumber) {
+        this.Name = name;
+        this.Address = address;
+        this.ID = ID;
+        this.DOB = DOB;
+        this.DOJ = DOJ;
+        this.PhoneNumber= PhoneNumber;
+    }
+
+    public Employee(int ID, String name, String phoneNumber) {
+        this.ID = ID;
+        Name = name;
+        PhoneNumber = phoneNumber;
+
     }
 
     void employeeinformation(){
