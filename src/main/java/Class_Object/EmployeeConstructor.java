@@ -10,6 +10,10 @@ public class EmployeeConstructor {
             Employee emp2= new Employee(1002,"Odrika","Dhaka","1 April 2016","1 January 2022","01222300999");
             emp2.employeeinformation();
 
+            System.out.println("\n");
+
+            Employee emp3= new Employee();
+            emp3.employeeinformation();
         }
     }
 

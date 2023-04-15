@@ -6,8 +6,11 @@ public class Employee {
     String DOB;
     String DOJ;
 
+    public Employee() {
+       System.out.println("Default value");
+    }
 
-    public Employee(int ID, String name, String address,  String DOB, String DOJ, String PhoneNumber) {
+    public Employee(int ID, String name, String address, String DOB, String DOJ, String PhoneNumber) {
         this.Name = name;
         this.Address = address;
         this.ID = ID;
